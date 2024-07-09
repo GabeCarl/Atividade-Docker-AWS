@@ -111,7 +111,7 @@ $ sudo apt-get -y install ./build/amazon-efs-utils*deb
 
 - Foi refeito todas as configurações acima
 
-  ## Criação Load Balancer
+## Criação Load Balancer
 
 - Foi criado um load balancer classic selecionando 2 AZs `east-1a` e `east-1b` para redirecionamento
 
@@ -119,7 +119,7 @@ $ sudo apt-get -y install ./build/amazon-efs-utils*deb
 
 - Foi Apontado 2 EC2 para o LB redirecionar, cada uma em 1 AZ
 
-##Criação Auto Scaling
+## Criação Auto Scaling
 
 - Foi Criado um modelo usando de base as atuis EC2
 
