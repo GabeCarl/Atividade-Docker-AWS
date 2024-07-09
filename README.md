@@ -118,3 +118,13 @@ $ sudo apt-get -y install ./build/amazon-efs-utils*deb
 - Necessário colocar 1 sub-rede pública para cada AZ selecionada
 
 - Foi Apontado 2 EC2 para o LB redirecionar, cada uma em 1 AZ
+
+##Criação Auto Scaling
+
+- Foi Criado um modelo usando de base as atuis EC2
+
+- Configurado a VPC e Sub-redes privadas em `east-1a` e `east-1b`
+
+- Definido Auto Scaling para no mínimo 0 e máximo 2 instâncias, sendo desejado 1
+
+- Configurado uma política de escalabilidade para adicionar instâncias quando CPU atingir 90% de uso
